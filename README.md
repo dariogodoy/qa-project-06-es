@@ -16,5 +16,5 @@ Para poder trabajar con Phyton en Pycharm debemos instalar los packages, podemos
 * Podemos instalar por el terminal de Pycharm usando el codigo 'pip install pytest' o 'pip3 install pytest'
 * Podemos hacerlo mediante la casilla 'Python Packages' aqui encontraremos los paquetes y junto la palabra install
 # Ejecutar prueba
-* Medienate el terminal debemos escribir el comando pytest y se ejecutara los codigos 
+* Mediante el terminal debemos escribir el comando pytest y se ejecutara los codigos 
 * Dando click en la parte superior derecha en el boton de reproducir 
