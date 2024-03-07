@@ -33,3 +33,9 @@ kits ={
        "productsList": 'null',
        "id": 8,
        "productsCount": 1 }
+
+one_letter = "a"
+longer_name = "x" * 522
+five_hundred_eleven_letters = "x" * 511
+empty_string = ""
+characters = "№%@"
