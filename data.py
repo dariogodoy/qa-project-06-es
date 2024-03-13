@@ -1,30 +1,49 @@
-
-kit_bodies = [
-    {
-        "name": "E"
-    },
-    {
-        "name": "B es una letra que nadie quiere"
-    },
-    {
-        "name": ""
-    },
-    {
-        "name": "El valor del numero a comprobar es menor a " * 633
-    },
-    {
-        "name": "№%@"
-    },
-    {
-        "name": " AOOoo "
-    }
-]
-
-headers = {
-    "Content-Type": "application/json"
+kit_body = {}
+one_letter = {
+    "name": "a"
+},
+longer_name = {
+    "name": "x" * 522
+},
+five_hundred_eleven_letters = {
+    "name": "x" * 511
+},
+empty_string = {
+    "name": ''
+},
+characters = {
+    "name": "№%@"
+},
+kit_spaces = {
+    "name": " A Aaa "
+},
+kit_numbers = {
+    "name": " 123 "
+},
+invalid_data = {
+    "name": 123
 }
 
-kits ={
+
+headers = {
+    "Content-Type": "application/json",
+    "Authorization": ""
+}
+
+user_body = {
+    "name": "David",
+    "phone": "+11569875693",
+    "password": "password123"
+}
+
+
+def get_new_user_token(token):
+    headers_token = headers.copy()
+    headers_token["Authorization"] = f"Bearer {token}"
+    return headers_token
+
+
+kits = {
        "name": "Mi saco",
        "card": {
            "id": 2,
@@ -32,10 +51,5 @@ kits ={
        },
        "productsList": 'null',
        "id": 8,
-       "productsCount": 1 }
-
-one_letter = "a"
-longer_name = "x" * 522
-five_hundred_eleven_letters = "x" * 511
-empty_string = ""
-characters = "№%@"
+       "productsCount": 1
+}
